@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:ecom/screen/homescreen.dart';
+import 'package:ecom/screen/onboard.dart';
 import 'package:flutter/material.dart';
 
 class splashScreen extends StatefulWidget {
@@ -17,7 +18,7 @@ class _splashScreenState extends State<splashScreen> {
     Timer(
       Duration(seconds: 3),
       ()=>Navigator.push(context,MaterialPageRoute(
-        builder: (context)=>HomeScreen(),
+        builder: (context)=>OnBoard(),
         )));
   }
 

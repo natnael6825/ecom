@@ -1,3 +1,4 @@
+import 'package:ecom/screen/login.dart';
 import 'package:flutter/material.dart';
 import 'screen/splashscreen.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
 primaryColor: Colors.amber,
     ) ,
 
-home: splashScreen(),
+home: Login(),
 
 
     );
