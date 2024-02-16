@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:ecom/screen/homescreen.dart';
+
 import 'package:ecom/screen/onboard.dart';
 import 'package:flutter/material.dart';
 
@@ -41,7 +41,7 @@ class _splashScreenState extends State<splashScreen> {
             Icon(
               Icons.shopping_cart,
               size: 200,
-              color: Colors.red,
+              color: Color.fromARGB(255, 121, 0, 169),
             ),
             Text(
               "DP Shop",

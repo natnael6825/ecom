@@ -1,7 +1,6 @@
-import 'package:ecom/screen/login.dart';
-import 'package:flutter/material.dart';
-import 'screen/splashscreen.dart';
 
+import 'package:flutter/material.dart';
+import 'screen/navigator.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -15,10 +14,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
     theme: ThemeData(
-primaryColor: Colors.amber,
+primaryColor: Color.fromARGB(255, 121, 0, 169),
     ) ,
 
-home: Login(),
+home: NavigatorScreen(),
 
 
     );

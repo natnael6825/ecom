@@ -1,4 +1,5 @@
-import 'package:ecom/screen/homescreen.dart';
+
+import 'package:ecom/screen/login.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
@@ -59,7 +60,7 @@ class OnBoard extends StatelessWidget {
             child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomeScreen()));
+                      MaterialPageRoute(builder: (context) => Login()));
                 },
                 child: Text(
                   "Let's Shop",
@@ -71,7 +72,7 @@ class OnBoard extends StatelessWidget {
                 ),
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size.fromHeight(55),
-                  backgroundColor: Color(0xffBA09FF),
+                  backgroundColor: Color.fromARGB(255, 121, 0, 169),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
@@ -84,11 +85,13 @@ class OnBoard extends StatelessWidget {
       showBackButton: true,
       back: Text(
         "Back",
-        style: TextStyle(fontWeight: FontWeight.w600, color: Color(0xffBA09FF)),
+        style: TextStyle(fontWeight: FontWeight.w600, 
+        color: Color.fromARGB(255, 121, 0, 169)),
       ),
       next: Text(
         "Next",
-        style: TextStyle(fontWeight: FontWeight.bold, color: Color(0xffBA09FF)),
+        style: TextStyle(fontWeight: FontWeight.bold,
+         color: Color.fromARGB(255, 121, 0, 169)),
       ),
       onDone: () {},
       onSkip: () {},
