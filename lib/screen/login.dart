@@ -1,5 +1,6 @@
 import 'package:ecom/screen/forgotpassword.dart';
-import 'package:ecom/screen/homescreen.dart';
+
+import 'package:ecom/screen/navigator.dart';
 import 'package:ecom/screen/signup.dart';
 import 'package:flutter/material.dart';
 
@@ -69,7 +70,7 @@ class Login extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => HomeScreen()));
+                                  builder: (context) => NavigatorScreen()));
                         },
                         child: Text(
                           "Log In",
