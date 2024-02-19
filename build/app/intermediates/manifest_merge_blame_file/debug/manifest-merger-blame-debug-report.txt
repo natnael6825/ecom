@@ -19,7 +19,7 @@
 17    <application
 18        android:name="android.app.Application"
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.6.0] C:\Users\hp\.gradle\caches\transforms-3\d08c73bfb05384f2e52578171dbd141e\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+19-->[androidx.core:core:1.7.0] C:\Users\hp\.gradle\caches\transforms-3\010b79dbae0a8b74028aa5645158e6aa\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 20        android:debuggable="true"
 21        android:icon="@mipmap/ic_launcher"
 22        android:label="ecom" >
@@ -56,18 +56,75 @@
 53            android:name="flutterEmbedding"
 54            android:value="2" />
 55
-56        <uses-library
-56-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-57            android:name="androidx.window.extensions"
-57-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-58            android:required="false" />
-58-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-59        <uses-library
-59-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-60            android:name="androidx.window.sidecar"
-60-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-61            android:required="false" />
-61-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
-62    </application>
-63
-64</manifest>
+56        <receiver
+56-->[:sms_otp_auto_verify] D:\project\Flutter\ecom\build\sms_otp_auto_verify\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-17:20
+57            android:name="com.oohyugi.sms_otp_auto_verify.SmsBroadcastReceiver"
+57-->[:sms_otp_auto_verify] D:\project\Flutter\ecom\build\sms_otp_auto_verify\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-80
+58            android:exported="true"
+58-->[:sms_otp_auto_verify] D:\project\Flutter\ecom\build\sms_otp_auto_verify\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-36
+59            android:permission="com.google.android.gms.auth.api.phone.permission.SEND" >
+59-->[:sms_otp_auto_verify] D:\project\Flutter\ecom\build\sms_otp_auto_verify\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-87
+60            <intent-filter>
+60-->[:sms_otp_auto_verify] D:\project\Flutter\ecom\build\sms_otp_auto_verify\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-16:29
+61                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+61-->[:sms_otp_auto_verify] D:\project\Flutter\ecom\build\sms_otp_auto_verify\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-94
+61-->[:sms_otp_auto_verify] D:\project\Flutter\ecom\build\sms_otp_auto_verify\intermediates\merged_manifest\debug\AndroidManifest.xml:15:25-91
+62            </intent-filter>
+63        </receiver>
+64
+65        <uses-library
+65-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+66            android:name="androidx.window.extensions"
+66-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+67            android:required="false" />
+67-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+68        <uses-library
+68-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+69            android:name="androidx.window.sidecar"
+69-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+70            android:required="false" />
+70-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+71
+72        <activity
+72-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\hp\.gradle\caches\transforms-3\dc79a7a053cbca4237779d2cb8fc03df\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:23:9-27:75
+73            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+73-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\hp\.gradle\caches\transforms-3\dc79a7a053cbca4237779d2cb8fc03df\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:24:13-93
+74            android:excludeFromRecents="true"
+74-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\hp\.gradle\caches\transforms-3\dc79a7a053cbca4237779d2cb8fc03df\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:25:13-46
+75            android:exported="false"
+75-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\hp\.gradle\caches\transforms-3\dc79a7a053cbca4237779d2cb8fc03df\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:26:13-37
+76            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+76-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\hp\.gradle\caches\transforms-3\dc79a7a053cbca4237779d2cb8fc03df\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:27:13-72
+77        <!--
+78            Service handling Google Sign-In user revocation. For apps that do not integrate with
+79            Google Sign-In, this service will never be started.
+80        -->
+81        <service
+81-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\hp\.gradle\caches\transforms-3\dc79a7a053cbca4237779d2cb8fc03df\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:33:9-37:51
+82            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+82-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\hp\.gradle\caches\transforms-3\dc79a7a053cbca4237779d2cb8fc03df\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:34:13-89
+83            android:exported="true"
+83-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\hp\.gradle\caches\transforms-3\dc79a7a053cbca4237779d2cb8fc03df\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:35:13-36
+84            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+84-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\hp\.gradle\caches\transforms-3\dc79a7a053cbca4237779d2cb8fc03df\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:36:13-107
+85            android:visibleToInstantApps="true" />
+85-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\hp\.gradle\caches\transforms-3\dc79a7a053cbca4237779d2cb8fc03df\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:37:13-48
+86
+87        <activity
+87-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hp\.gradle\caches\transforms-3\680a2964d8a0bce7cbd43c0f88e0420c\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+88            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+88-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hp\.gradle\caches\transforms-3\680a2964d8a0bce7cbd43c0f88e0420c\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+89            android:exported="false"
+89-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hp\.gradle\caches\transforms-3\680a2964d8a0bce7cbd43c0f88e0420c\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+90            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+90-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hp\.gradle\caches\transforms-3\680a2964d8a0bce7cbd43c0f88e0420c\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+91
+92        <meta-data
+92-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\hp\.gradle\caches\transforms-3\b8c7e0501cdb50e76c669e8ca99b676d\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+93            android:name="com.google.android.gms.version"
+93-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\hp\.gradle\caches\transforms-3\b8c7e0501cdb50e76c669e8ca99b676d\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+94            android:value="@integer/google_play_services_version" />
+94-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\hp\.gradle\caches\transforms-3\b8c7e0501cdb50e76c669e8ca99b676d\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+95    </application>
+96
+97</manifest>

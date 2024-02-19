@@ -30,6 +30,21 @@ class _NavigatorScreenState extends State<NavigatorScreen> {
         index: pageIndex,
         children: pages,
       ),
+      floatingActionButton: SafeArea(
+        child: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(
+            Icons.qr_code,
+            size: 20,
+          ),
+
+          backgroundColor:  Color.fromARGB(255, 121, 0, 169),
+        ),
+      ),
+
+
+floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+
       bottomNavigationBar: AnimatedBottomNavigationBar(
         activeIndex: pageIndex,
         icons: [
@@ -40,7 +55,7 @@ class _NavigatorScreenState extends State<NavigatorScreen> {
         ],
         inactiveColor: Colors.black.withOpacity(0.5),
         gapLocation: GapLocation.center,
-      activeColor: Color.fromARGB(255, 121, 0, 169),
+        activeColor: Color.fromARGB(255, 121, 0, 169),
         notchSmoothness: NotchSmoothness.softEdge,
         leftCornerRadius: 10,
         iconSize: 25,
